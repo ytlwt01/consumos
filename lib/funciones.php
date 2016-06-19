@@ -5,7 +5,7 @@ function db_conectar(){
 
 $link=mssql_connect("YOEL-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
 
-mssql_select_db("bd_consumos"); 
+mssql_select_db("BD_Consumos"); 
 
 return $link;
 
