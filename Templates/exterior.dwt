@@ -1,29 +1,12 @@
-<?php
-
-include('lib\funciones.php');
-$conexion= db_conectar();
-$sql="INSERT INTO 
-  dbo.marcas
-(
-  codigo_marca,
-  nombre
-) 
-VALUES (
-  2,'ColaReal'
-  
-); ";
-ejecutar($sql,$conexion);
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/exterior.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Documento sin título</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
@@ -72,20 +55,9 @@ ejecutar($sql,$conexion);
         <td>&nbsp;</td>
       </tr>
     </table></td>
-    <td width="75%" align="right" valign="top"><!-- InstanceBeginEditable name="edita1" -->
-      <table width="31%" border="1">
-        <tr>
-          <td height="111">login</td>
-        </tr>
-        <tr>
-          <td height="136">persona escriendo</td>
-        </tr>
-        <tr>
-          <td height="123">afiliarse</td>
-        </tr>
-      </table>
+    <td width="75%" align="right" valign="top"><!-- TemplateBeginEditable name="edita1" -->
       <p>&nbsp;</p>
-    <!-- InstanceEndEditable -->s</td>
+    <!-- TemplateEndEditable -->s</td>
   </tr>
   <tr>
     <td height="137" colspan="2" valign="top" bgcolor="#663300"><table width="100%" border="0">
@@ -98,4 +70,4 @@ ejecutar($sql,$conexion);
   </tr>
 </table>
 </body>
-<!-- InstanceEnd --></html>
+</html>
