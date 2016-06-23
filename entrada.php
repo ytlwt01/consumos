@@ -6,8 +6,9 @@ $link=db_conectar();
 $login = $_POST['login'];
 $clave = $_POST['clave'];
 
-
 session_start();
+
+//El problema estaba en que el else iba fuera, no dentro con el if del mssql
 if (session_is_registered("vs")==false){
 		$sql="select identificacion,nombre from usuarios where login='$login'
      and clave='$clave'  ";	
@@ -21,14 +22,16 @@ if (session_is_registered("vs")==false){
 			$_SESSION["vs"] ='1';			
 			$varocu=$row[0];
       
-		}else
-		{
-      $_SESSION["vs"]=false;
-			session_destroy();
-			header("Location: index.php?identificacion=$login");
-			exit;
 		}
+
+}else
+    {
+      $_SESSION["vs"]=false;
+      session_destroy();
+      header("Location: index.php?identificacion=$login");
+      exit;
 }
+
 if(isset($_REQUEST['vSalir'])){
   $_SESSION["vs"]=false;
 	session_destroy();
@@ -59,6 +62,13 @@ FROM
 
 $res=ejecutar_query($sql,$link);
 $row=traer_fila($res);
+
+if(!$row[0]){
+    session_destroy();
+      header("Location: index.php?identificacion=$login");
+      
+}
+
 
 ?>
 

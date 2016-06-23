@@ -78,14 +78,14 @@
     </tr>
     <tr>
      <td height="26" bgcolor="#66FF00"><div align="center"><strong>Contraseña:</strong></div></td>
-      <td><input type="text" name="clave" id="clave" required/></td>
+      <td><input type="password" name="clave" id="clave" required/></td>
     </tr>
     <tr>
       <td colspan="2" align="center" valign="middle"><p>
         <input type="submit" name="Entrar" id="Entrar" value="Entrar" />
       </p>
         <p><font color="#FF0000" size="2" face="Arial, Helvetica, sans-serif">
-          <?php if (isset($login)){echo "USUARIO NO EXISTE"; }  ?>
+          <?php if ($login == 1){echo "USUARIO NO EXISTE"; }  ?>
         </font> </p></td>
     </tr>
           </table>
@@ -107,8 +107,8 @@
   <tr>
     <td height="137" colspan="2" valign="top" bgcolor="#663300"><table width="100%" border="0">
       <tr>
-        <td width="29%" height="134" bgcolor="#66CCFF"><p align="center"><strong>Copyright 2016</strong></p>
-          <p align="center"><strong>-Yoel Antonio Torres</strong></p></td>
+        <td width="29%" height="134" bgcolor="#66CCFF"><p align="center"><strong>&copy;Copyright 2016</strong></p>
+          <p align="center"><strong>Yoel Antonio Torres</strong></p></td>
         <td width="31%" bgcolor="#66CCFF"><p align="center"><strong>Pagina de consumos</strong></p></td>
         <td width="40%" bgcolor="#66CCFF"><p align="center"><strong>Proyecto final </strong></p>
           <p align="center"><strong>Pagina Web 1</strong></p></td>
