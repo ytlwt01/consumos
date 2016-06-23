@@ -1,6 +1,17 @@
 ﻿<?php
 
 //==================CONECTAR======================
+
+function db_conectar(){
+
+$link=mssql_connect("GRIMMJOW-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
+
+mssql_select_db("BD_Consumos"); 
+
+return $link;
+
+} 
+/*
 function db_conectar(){
 
 $link=mssql_connect("YOEL-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
@@ -10,7 +21,19 @@ mssql_select_db("BD_Consumos");
 return $link;
 
 } 
+*/
 
+
+/*
+function db_conectar(){
+
+$link=mssql_connect("serverdaite", "utesa",  "utesa") or die ('No hubo conexión con la base de datos:' . mssql_error());
+
+mssql_select_db("BD_Consumos"); 
+
+return $link;
+
+} */
 
 
 function trae_valor($sql,$link){
@@ -24,7 +47,7 @@ function traer_fila($resultado){
 			return $fila;
 		}	
 
-function ejecutar($sql,$link){
+function ejecutar_query($sql,$link){
 			$resultado = mssql_query($sql, $link);
 			return $resultado;
 		}
@@ -125,5 +148,30 @@ function create_excel_file($link,$sql,$nombre)
      }
 }
 
+
+function calendario($pNombre,$pValor,$pDesabilitado='',  $evento='' ){
+	$res = "
+
+    <script src='lib/src/js/jscal2.js'></script>
+    <script src='lib/src/js/lang/en.js'></script>
+    <link rel='stylesheet' type='text/css' href='lib/src/css/jscal2.css' />
+    <link rel='stylesheet' type='text/css' href='lib/src/css/border-radius.css' />
+    <link rel='stylesheet' type='text/css' href='lib/src/css/gold/gold.css' />
+	
+               <input name='$pNombre' type='text' id='$pNombre' 
+                  		value='$pValor' size='10' maxlength='10'  $evento >
+                    <a href='#' onMouseOut=\"MM_swapImgRestore()\" 
+					   onMouseOver=\"MM_swapImage('Image3','','lib/img/calendar2.gif',1)\">
+					<img src='lib/img/calendar1.gif' name='b$pNombre' width='19' height='20' border='0' id='b$pNombre'></a>
+                  
+		    <script type='text/javascript'>//<![CDATA[
+		      var cal = Calendar.setup({
+        	  onSelect: function(cal) { cal.hide() }
+		      });
+		      cal.manageFields('b$pNombre', '$pNombre', '%Y/%m/%d');
+		    //]]></script>
+				";	
+	return	$res;		  
+}
 
 ?>
