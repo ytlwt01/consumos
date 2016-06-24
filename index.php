@@ -97,7 +97,8 @@
         </tr>
         
         <tr>
-          <td height="123"><img src="images/afiliarte.gif" width="358" height="244" alt="afiliarse" /></td>
+          <td height="123"><a href="afiliate.php"><img src="images/afiliarte.gif" width="358" height="244" alt="afiliarse" /></a></td>
+         
         </tr>
       </table>
 
