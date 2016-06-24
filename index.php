@@ -20,10 +20,10 @@
       <div align="right">
         <table width="26%" border="0">
           <tr>
-            <td width="27%" height="72" align="center"><a href="#"><img src="images/facebook.jpg" width="56" height="54" alt="facebook" /></a></td>
-            <td width="23%" align="center"><a href="#"><img src="images/instagram.png" width="56" height="54" alt="instagram" /></a></td>
-            <td width="24%" align="center"><a href="#"><img src="images/twitter.png" width="56" height="54" alt="twitter" /></a></td>
-            <td width="26%" align="center"><a href="#"><img src="images/youtube.png" width="60" height="65" alt="youtube"  /></a></td>
+            <td width="27%" height="72" align="center"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" width="56" height="54" alt="facebook" /></a></td>
+            <td width="23%" align="center"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" width="56" height="54" alt="instagram" /></a></td>
+            <td width="24%" align="center"><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" width="56" height="54" alt="twitter" /></a></td>
+            <td width="26%" align="center"><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" width="60" height="65" alt="youtube"  /></a></td>
           </tr>
           
         </table>
@@ -36,23 +36,24 @@
         </tr>
       <tr>
         <td width="11%"><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
-        <td width="89%">Ofertas</td>
+        <td width="89%"><a href="prueba.html" id="botonesmenu">Ofertas</a></td>
+
       </tr>
       <tr>
         <td height="35%"><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
-        <td>Requisitos</td>
+        <td><a href="prueba.html" id="botonesmenu">Requisitos</a></td>
       </tr>
       <tr>
         <td height="28"><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
-        <td>Servicios</td>
+        <td><a href="prueba.html" id="botonesmenu">Servicios</a></td>
       </tr>
       <tr>
         <td><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
-        <td>Marcas Afiliadas</td>
+        <td><a href="prueba.html" id="botonesmenu">Marcas afiliadas</a></td>
       </tr>
       <tr>
         <td><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
-        <td>Sucursales</td>
+        <td><a href="prueba.html" id="botonesmenu">Sucursales</a></td>
       </tr>
       
       </tr>
