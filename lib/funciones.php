@@ -1,7 +1,7 @@
 ﻿<?php
 
 //==================CONECTAR======================
-
+/*
 function db_conectar(){
 
 $link=mssql_connect("GRIMMJOW-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
@@ -10,8 +10,8 @@ mssql_select_db("BD_Consumos");
 
 return $link;
 
-} 
-/*
+} */
+
 function db_conectar(){
 
 $link=mssql_connect("YOEL-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
@@ -20,7 +20,7 @@ mssql_select_db("BD_Consumos");
 
 return $link;
 
-} 
+} /*
 */
 
 
