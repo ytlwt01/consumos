@@ -49,12 +49,9 @@ if(isset($_REQUEST['vSalir'])){
 
 <body>
 <p>&nbsp;</p>
-<<<<<<< HEAD
+
 <h1>Bienvenido estos son tus datos:</h1>
 <p><a href="#">USUARIOS</a>
-=======
-<p><a href="usuarios.php">USUARIOS</a>
->>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
 <?php 
 $sql="
 SELECT 

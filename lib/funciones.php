@@ -1,26 +1,6 @@
 ﻿<?php
 
-//==================CONECTAR======================
-<<<<<<< HEAD
-/*
-=======
 
->>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
-function db_conectar(){
-
-$link=mssql_connect("GRIMMJOW-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
-
-mssql_select_db("BD_Consumos"); 
-
-return $link;
-
-<<<<<<< HEAD
-} */
-
-=======
-} 
-/*
->>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
 function db_conectar(){
 
 $link=mssql_connect("YOEL-PC", "sa",  "03101203069") or die ('No hubo conexión con la base de datos:' . mssql_error());
@@ -28,26 +8,7 @@ $link=mssql_connect("YOEL-PC", "sa",  "03101203069") or die ('No hubo conexión 
 mssql_select_db("BD_Consumos"); 
 
 return $link;
-
-<<<<<<< HEAD
-} /*
-*/
-
-=======
-} 
-*/
->>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
-
-/*
-function db_conectar(){
-
-$link=mssql_connect("serverdaite", "utesa",  "utesa") or die ('No hubo conexión con la base de datos:' . mssql_error());
-
-mssql_select_db("BD_Consumos"); 
-
-return $link;
-
-} */
+}
 
 /*
 function db_conectar(){

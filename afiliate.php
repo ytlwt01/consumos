@@ -33,13 +33,10 @@
      <td width="89" height="20" bgcolor="#58ACFA"><div align="center"><strong>Codigo:</strong></div></td>
       <td width="197"><input name="codusu" type="text" id="codusu"  required /></td>
     </tr>
-<<<<<<< HEAD
      <tr>
      <td width="89" height="20" bgcolor="#58ACFA"><div align="center"><strong>Identifiación:</strong></div></td>
       <td width="197"><input name="identificacion" type="text" id="identificacion"  required /></td>
     </tr>
-=======
->>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
        <tr>
      <td width="89" height="20" bgcolor="#58ACFA"><div align="center"><strong>Usuario:</strong></div></td>
       <td width="197"><input name="login" type="text" id="login"  required /></td>
