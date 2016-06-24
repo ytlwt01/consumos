@@ -34,11 +34,14 @@
       <tr>
         <td colspan="2" align="center" valign="middle" bgcolor="#66FF00">Opciones</td>
         </tr>
+<<<<<<< HEAD
         <tr>
         <td width="11%"><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
         <td width="89%"><a href="index.php" id="botonesmenu">Inicio</a></td>
 
       </tr>
+=======
+>>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
       <tr>
         <td width="11%"><img src="images/botones.jpg" width="20" height="19" alt="boton" /></td>
         <td width="89%"><a href="prueba.html" id="botonesmenu">Ofertas</a></td>

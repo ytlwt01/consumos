@@ -9,7 +9,10 @@ $sexo = $_POST['sexo'];
 $correo = $_POST['correo'];
 $login = $_POST['login'];
 $clave = $_POST['clave'];
+<<<<<<< HEAD
 $identifiacion = $_POST['identificacion'];
+=======
+>>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
 
 $sql = "INSERT INTO 
   dbo.usuarios
@@ -17,12 +20,19 @@ $sql = "INSERT INTO
   codigo_usuario,
   nombre,
   direccion,
+<<<<<<< HEAD
   sexo,
   correo,
   [login],
   clave,
   identificacion
   
+=======
+  correo,
+  [login],
+  clave,
+  sexo,
+>>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
  
 ) 
 VALUES (
@@ -32,12 +42,20 @@ VALUES (
  '$sexo',
  '$correo',
  '$login',
+<<<<<<< HEAD
  '$clave',
  '$identifiacion'
 
 )";
 
 $res=ejecutar_query($sql,$link);
+=======
+ '$clave'
+
+)";
+
+ejecutar_query($sql,$link);
+>>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
 
 
 
@@ -52,6 +70,7 @@ $res=ejecutar_query($sql,$link);
 
 <body>
 
+<<<<<<< HEAD
 <?php 
 if ($res){
 	echo '<h1>Datos registrados correctamente</h1>';
@@ -65,6 +84,10 @@ if ($res){
 
 
 
+=======
+
+<h1>Datos registrados correctamente</h1>
+>>>>>>> 4afa332d1fee22086a5e8c740ad9c33eda5d4926
 <p><a href="index.php">Volver a pagina principal</a>
 
 ?>
